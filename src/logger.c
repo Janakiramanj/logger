@@ -100,7 +100,7 @@ void logger()
 
 void add_log(char* path)
 {
-    int F = open("./build/log.txt", O_CREAT | O_RDWR | O_APPEND, 0777);
+    int F = open("./data/log.txt", O_CREAT | O_RDWR | O_APPEND, 0777);
     if (F < 0) return;
 
     struct record user;
